@@ -1,0 +1,85 @@
+{
+  "name": "root",
+  "gauges": [
+    {
+      "name": "MyAgentLearningBrain.mean_reward",
+      "value": -1.6666666666666667,
+      "min": -2.25,
+      "max": -0.9166666666666666,
+      "count": 9
+    }
+  ],
+  "total": 314.659712,
+  "count": 1,
+  "self": 9.279855600000928,
+  "children": [
+    {
+      "name": "TrainerController.advance",
+      "total": 305.3798563999991,
+      "count": 10001,
+      "self": 5.0142110999996135,
+      "children": [
+        {
+          "name": "env_step",
+          "total": 120.18468079999708,
+          "count": 10001,
+          "self": 115.68477699999724,
+          "children": [
+            {
+              "name": "SubprocessEnvManager._take_step",
+              "total": 4.387176800000128,
+              "count": 10001,
+              "self": 4.387176800000128
+            },
+            {
+              "name": "workers",
+              "total": 0.11272699999971092,
+              "count": 10001,
+              "self": 0.0,
+              "children": [
+                {
+                  "name": "worker_root",
+                  "total": 310.15141819999974,
+                  "count": 10001,
+                  "is_parallel": true,
+                  "self": 202.12733610000117,
+                  "children": [
+                    {
+                      "name": "UnityEnvironment.step",
+                      "total": 108.02408209999858,
+                      "count": 10001,
+                      "is_parallel": true,
+                      "self": 4.034949800001769,
+                      "children": [
+                        {
+                          "name": "UnityEnvironment._generate_step_input",
+                          "total": 0.6254060999980124,
+                          "count": 10001,
+                          "is_parallel": true,
+                          "self": 0.6254060999980124
+                        },
+                        {
+                          "name": "communicator.exchange",
+                          "total": 103.3637261999988,
+                          "count": 10001,
+                          "is_parallel": true,
+                          "self": 103.3637261999988
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "update_policy",
+          "total": 180.1809645000024,
+          "count": 9937,
+          "self": 180.1809645000024
+        }
+      ]
+    }
+  ]
+}
